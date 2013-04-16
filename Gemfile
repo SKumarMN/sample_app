@@ -14,6 +14,9 @@ end
 
 gem 'bcrypt-ruby'
 gem "bootstrap-sass"
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 
 # Gems used only for assets and not required
