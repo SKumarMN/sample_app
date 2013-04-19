@@ -25,6 +25,11 @@ class User < ActiveRecord::Base
 
   has_many :microposts, dependent: :destroy
 
+  def feed
+    Micropost.where("user_id = ?", id)
+  
+  end
+
   private
 
   def create_token
